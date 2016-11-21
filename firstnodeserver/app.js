@@ -33,7 +33,9 @@ var app = http.createServer(function(request, response) {
 
 	// 4.
 	router.home(request, response);
-	router.detail(request, response);
+	router.about(request, response);
+	router.fastcampus(request, response);
+	// router.detail(request, response);
 
 
 }).listen(process.env.PORT || 3030);
