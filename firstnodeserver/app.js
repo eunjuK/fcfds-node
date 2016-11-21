@@ -13,6 +13,16 @@ var app = http.createServer(function(request, response) {
 		response.write("This is HOME!");
 		response.end();
 	}
+
+	// id 값에 따라 출력값이 달라지는 화면 설정
+	var detailId = request.url.replace("/", "");
+	if(detailId.length > 0) {
+		response.write(detailId);
+		response.end();
+	}
+
+
+
 }).listen(process.env.PORT || 3030);
 
 // 서버가 동작했는지 확인하기위함.
