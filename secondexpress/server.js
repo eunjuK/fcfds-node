@@ -3,6 +3,7 @@ var app = express();
 
 var indexRouter = require("./routes/index")(app);
 var aboutRouter = require("./routes/about")(app);
+var userRouter = require("./routes/users")(app);
 
 
 app.set("port", process.env.PORT ||3030);
